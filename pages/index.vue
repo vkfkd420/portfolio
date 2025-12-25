@@ -1,14 +1,19 @@
 <template>
-  <Main />
+  <div>
+    <HeroSection />
+    <AboutSection />
+    <SkillsSection />
+    <ExperienceSection />
+    <ProjectsSection />
+    <ContactSection />
+  </div>
 </template>
 
-<script>
-import Main from '~/components/Main.vue'
-
-export default {
-  components: {
-    Main
-  },
-  name: 'IndexPage'
-}
+<script setup>
+import HeroSection from '~/components/HeroSection.vue'
+import AboutSection from '~/components/AboutSection.vue'
+import SkillsSection from '~/components/SkillsSection.vue'
+import ExperienceSection from '~/components/ExperienceSection.vue'
+import ProjectsSection from '~/components/ProjectsSection.vue'
+import ContactSection from '~/components/ContactSection.vue'
 </script>
