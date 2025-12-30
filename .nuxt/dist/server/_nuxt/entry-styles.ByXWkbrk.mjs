@@ -1,5 +1,5 @@
 import style_0 from './entry-styles-1.mjs-C24ZRDhp.js';
-import style_1 from './entry-styles-2.mjs-CtIVB90S.js';
+import style_1 from './entry-styles-2.mjs-C9RMrhgn.js';
 import style_2 from './entry-styles-3.mjs-CN7hc1q4.js';
 import style_3 from './entry-styles-4.mjs-rEcEFrbQ.js';
 import style_4 from './entry-styles-5.mjs-BRZWjqxC.js';
