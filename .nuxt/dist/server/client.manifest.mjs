@@ -1,1 +1,471 @@
-export { default } from "file:///C:/workspace/portfolio/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
+export default {
+  "_DDzcDq6O.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "DDzcDq6O.js",
+    "name": "v3",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "_tNl9A4qD.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "tNl9A4qD.js",
+    "name": "nuxt-link",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "assets/img/hero-avatar.jpg": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/jpeg",
+    "file": "hero-avatar.CPLXj3ac.jpg",
+    "src": "assets/img/hero-avatar.jpg"
+  },
+  "assets/img/projects/company-intro/company-intro-1.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "company-intro-1.DFLv0qe2.png",
+    "src": "assets/img/projects/company-intro/company-intro-1.png"
+  },
+  "assets/img/projects/company-intro/company-intro-2.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "company-intro-2.BDRaKJtc.png",
+    "src": "assets/img/projects/company-intro/company-intro-2.png"
+  },
+  "assets/img/projects/company-intro/company-intro-3.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "company-intro-3.BRsMYObY.png",
+    "src": "assets/img/projects/company-intro/company-intro-3.png"
+  },
+  "assets/img/projects/company-intro/company-intro-4.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "company-intro-4.86rpr96c.png",
+    "src": "assets/img/projects/company-intro/company-intro-4.png"
+  },
+  "assets/img/projects/company-intro/company-intro-5.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "company-intro-5.D28UJRah.png",
+    "src": "assets/img/projects/company-intro/company-intro-5.png"
+  },
+  "assets/img/projects/internal-admin/internal-admin-1.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "internal-admin-1.0lJQQSwh.png",
+    "src": "assets/img/projects/internal-admin/internal-admin-1.png"
+  },
+  "assets/img/projects/internal-admin/internal-admin-2.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "internal-admin-2.gwBOSLrp.png",
+    "src": "assets/img/projects/internal-admin/internal-admin-2.png"
+  },
+  "assets/img/projects/internal-admin/internal-admin-3.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "internal-admin-3.DvrLzxif.png",
+    "src": "assets/img/projects/internal-admin/internal-admin-3.png"
+  },
+  "assets/img/projects/investment-secret/investment-secret-1.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "investment-secret-1.DNnn-EgJ.png",
+    "src": "assets/img/projects/investment-secret/investment-secret-1.png"
+  },
+  "assets/img/projects/investment-secret/investment-secret-2.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "investment-secret-2.Cb7iZnYQ.png",
+    "src": "assets/img/projects/investment-secret/investment-secret-2.png"
+  },
+  "assets/img/projects/investment-secret/investment-secret-3.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "investment-secret-3.CNUsjtoN.png",
+    "src": "assets/img/projects/investment-secret/investment-secret-3.png"
+  },
+  "assets/img/projects/kiumi/kiumi-1.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "kiumi-1.Cfz32nsV.png",
+    "src": "assets/img/projects/kiumi/kiumi-1.png"
+  },
+  "assets/img/projects/kiumi/kiumi-2.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "kiumi-2.DttBxa3f.png",
+    "src": "assets/img/projects/kiumi/kiumi-2.png"
+  },
+  "assets/img/projects/kiumi/kiumi-3.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "kiumi-3.YtF4SlFZ.png",
+    "src": "assets/img/projects/kiumi/kiumi-3.png"
+  },
+  "assets/img/projects/masterclass/masterclass-1.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "masterclass-1.CtK3n9T_.png",
+    "src": "assets/img/projects/masterclass/masterclass-1.png"
+  },
+  "assets/img/projects/masterclass/masterclass-2.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "masterclass-2.BT27foGD.png",
+    "src": "assets/img/projects/masterclass/masterclass-2.png"
+  },
+  "assets/img/projects/masterclass/masterclass-3.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "masterclass-3.3UbJyHJW.png",
+    "src": "assets/img/projects/masterclass/masterclass-3.png"
+  },
+  "assets/img/projects/noshow/noshow-1.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "noshow-1.BXx61q4r.png",
+    "src": "assets/img/projects/noshow/noshow-1.png"
+  },
+  "assets/img/projects/noshow/noshow-2.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "noshow-2.CpJovSKW.png",
+    "src": "assets/img/projects/noshow/noshow-2.png"
+  },
+  "assets/img/projects/noshow/noshow-3.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "noshow-3.CYZ9_08u.png",
+    "src": "assets/img/projects/noshow/noshow-3.png"
+  },
+  "assets/img/projects/noshow/noshow-4.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "noshow-4.CPSKrD9I.png",
+    "src": "assets/img/projects/noshow/noshow-4.png"
+  },
+  "assets/img/projects/noshow/noshow-5.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "noshow-5.CTI1_q_K.png",
+    "src": "assets/img/projects/noshow/noshow-5.png"
+  },
+  "assets/img/projects/rassi-admin/rassi-admin-1.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "rassi-admin-1.zHIdFbYe.png",
+    "src": "assets/img/projects/rassi-admin/rassi-admin-1.png"
+  },
+  "assets/img/projects/rassi-admin/rassi-admin-2.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "rassi-admin-2.CF-HWsM8.png",
+    "src": "assets/img/projects/rassi-admin/rassi-admin-2.png"
+  },
+  "layouts/default.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "uYI9ttO-.js",
+    "name": "default",
+    "src": "layouts/default.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_tNl9A4qD.js",
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "node_modules/nuxt/dist/app/components/error-404.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "CmQ79vQ7.js",
+    "name": "error-404",
+    "src": "node_modules/nuxt/dist/app/components/error-404.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_tNl9A4qD.js",
+      "node_modules/nuxt/dist/app/entry.js",
+      "_DDzcDq6O.js"
+    ],
+    "css": []
+  },
+  "error-404.MksMKVWr.css": {
+    "file": "error-404.MksMKVWr.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
+  },
+  "node_modules/nuxt/dist/app/components/error-500.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "BoqqKfRH.js",
+    "name": "error-500",
+    "src": "node_modules/nuxt/dist/app/components/error-500.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js",
+      "_DDzcDq6O.js"
+    ],
+    "css": []
+  },
+  "error-500.DOWD7OuR.css": {
+    "file": "error-500.DOWD7OuR.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
+  },
+  "node_modules/nuxt/dist/app/entry.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "JqvyMD4_.js",
+    "name": "entry",
+    "src": "node_modules/nuxt/dist/app/entry.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "layouts/default.vue",
+      "node_modules/nuxt/dist/app/components/error-404.vue",
+      "node_modules/nuxt/dist/app/components/error-500.vue"
+    ],
+    "_globalCSS": true
+  },
+  "pages/index.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "6auRcDtL.js",
+    "name": "index",
+    "src": "pages/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "css": [
+      "index.DT7wdEq_.css"
+    ],
+    "assets": [
+      "hero-avatar.CPLXj3ac.jpg",
+      "kiumi-1.Cfz32nsV.png",
+      "kiumi-2.DttBxa3f.png",
+      "kiumi-3.YtF4SlFZ.png",
+      "masterclass-1.CtK3n9T_.png",
+      "masterclass-2.BT27foGD.png",
+      "masterclass-3.3UbJyHJW.png",
+      "investment-secret-1.DNnn-EgJ.png",
+      "investment-secret-2.Cb7iZnYQ.png",
+      "investment-secret-3.CNUsjtoN.png",
+      "noshow-1.BXx61q4r.png",
+      "noshow-2.CpJovSKW.png",
+      "noshow-3.CYZ9_08u.png",
+      "noshow-4.CPSKrD9I.png",
+      "noshow-5.CTI1_q_K.png",
+      "rassi-admin-1.zHIdFbYe.png",
+      "rassi-admin-2.CF-HWsM8.png",
+      "company-intro-1.DFLv0qe2.png",
+      "company-intro-2.BDRaKJtc.png",
+      "company-intro-3.BRsMYObY.png",
+      "company-intro-4.86rpr96c.png",
+      "company-intro-5.D28UJRah.png",
+      "internal-admin-1.0lJQQSwh.png",
+      "internal-admin-2.gwBOSLrp.png",
+      "internal-admin-3.DvrLzxif.png"
+    ]
+  },
+  "index.DT7wdEq_.css": {
+    "file": "index.DT7wdEq_.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
+  },
+  "hero-avatar.CPLXj3ac.jpg": {
+    "file": "hero-avatar.CPLXj3ac.jpg",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/jpeg"
+  },
+  "kiumi-1.Cfz32nsV.png": {
+    "file": "kiumi-1.Cfz32nsV.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "kiumi-2.DttBxa3f.png": {
+    "file": "kiumi-2.DttBxa3f.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "kiumi-3.YtF4SlFZ.png": {
+    "file": "kiumi-3.YtF4SlFZ.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "masterclass-1.CtK3n9T_.png": {
+    "file": "masterclass-1.CtK3n9T_.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "masterclass-2.BT27foGD.png": {
+    "file": "masterclass-2.BT27foGD.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "masterclass-3.3UbJyHJW.png": {
+    "file": "masterclass-3.3UbJyHJW.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "investment-secret-1.DNnn-EgJ.png": {
+    "file": "investment-secret-1.DNnn-EgJ.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "investment-secret-2.Cb7iZnYQ.png": {
+    "file": "investment-secret-2.Cb7iZnYQ.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "investment-secret-3.CNUsjtoN.png": {
+    "file": "investment-secret-3.CNUsjtoN.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "noshow-1.BXx61q4r.png": {
+    "file": "noshow-1.BXx61q4r.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "noshow-2.CpJovSKW.png": {
+    "file": "noshow-2.CpJovSKW.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "noshow-3.CYZ9_08u.png": {
+    "file": "noshow-3.CYZ9_08u.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "noshow-4.CPSKrD9I.png": {
+    "file": "noshow-4.CPSKrD9I.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "noshow-5.CTI1_q_K.png": {
+    "file": "noshow-5.CTI1_q_K.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "rassi-admin-1.zHIdFbYe.png": {
+    "file": "rassi-admin-1.zHIdFbYe.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "rassi-admin-2.CF-HWsM8.png": {
+    "file": "rassi-admin-2.CF-HWsM8.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "company-intro-1.DFLv0qe2.png": {
+    "file": "company-intro-1.DFLv0qe2.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "company-intro-2.BDRaKJtc.png": {
+    "file": "company-intro-2.BDRaKJtc.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "company-intro-3.BRsMYObY.png": {
+    "file": "company-intro-3.BRsMYObY.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "company-intro-4.86rpr96c.png": {
+    "file": "company-intro-4.86rpr96c.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "company-intro-5.D28UJRah.png": {
+    "file": "company-intro-5.D28UJRah.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "internal-admin-1.0lJQQSwh.png": {
+    "file": "internal-admin-1.0lJQQSwh.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "internal-admin-2.gwBOSLrp.png": {
+    "file": "internal-admin-2.gwBOSLrp.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "internal-admin-3.DvrLzxif.png": {
+    "file": "internal-admin-3.DvrLzxif.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  }
+}
