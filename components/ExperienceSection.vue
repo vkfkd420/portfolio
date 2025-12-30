@@ -6,7 +6,7 @@
         <div class="timeline-item">
           <span class="date">2022.01.03 - 재직중</span>
           <div class="content">
-            <h3>연구원 (Researcher)</h3>
+            <h3>책임 (Senior Researcher)</h3>
             <span class="company">씽크풀 (ThinkPool)</span>
             <p>
               Vue, Nuxt, Spring, Oracle 등을 활용한 프로젝트 참여.<br>
