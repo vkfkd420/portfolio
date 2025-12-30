@@ -111,9 +111,11 @@
       position: fixed;
       top: 0;
       right: -100%;
-      width: 100%;
+      width: 70%;
+      max-width: 320px; /* 너무 커지지 않게 제한 */
       height: 100vh;
       background-color: var(--bg-color);
+      box-shadow: -5px 0 15px rgba(0,0,0,0.1); /* 그림자 추가 */
       flex-direction: column;
       justify-content: center;
       align-items: center;
