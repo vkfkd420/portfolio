@@ -80,6 +80,29 @@
   transform: translateY(-2px);
 }
 
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+@media (max-width: 960px) {
+  .hero-actions {
+    justify-content: center;
+  }
+}
+
 .typing-cursor::after {
   content: '|';
   animation: blink 1s step-end infinite;

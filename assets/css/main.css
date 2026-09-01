@@ -1,12 +1,42 @@
 :root {
   --bg-color: #ffffff;
+  --bg-color-rgb: 255, 255, 255;
+  --bg-secondary: #f5f7fa;
   --text-color: #1a1a1a;
   --text-secondary: #666666;
   --accent-color: #4A90E2;
   --border-color: #eaeaea;
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --modal-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
   --section-spacing: 120px;
   --container-width: 800px;
   --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg-color: #0f1115;
+    --bg-color-rgb: 15, 17, 21;
+    --bg-secondary: #1a1d24;
+    --text-color: #f0f0f0;
+    --text-secondary: #a3a9b5;
+    --accent-color: #6ba4f0;
+    --border-color: #2a2d35;
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    --modal-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg-color: #0f1115;
+  --bg-color-rgb: 15, 17, 21;
+  --bg-secondary: #1a1d24;
+  --text-color: #f0f0f0;
+  --text-secondary: #a3a9b5;
+  --accent-color: #6ba4f0;
+  --border-color: #2a2d35;
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  --modal-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
 }
 
 * {
@@ -33,6 +63,7 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   width: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container {

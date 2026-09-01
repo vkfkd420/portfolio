@@ -1,0 +1,15 @@
+# Nuxt dev/build outputs
+.nuxt
+.output
+.data
+dist
+
+# Node
+node_modules
+
+# Logs
+*.log
+
+# Editor
+.vscode
+.DS_Store

@@ -8,7 +8,10 @@
           더 나은 협업과 유지보수를 위해 정돈된 코드를 만들고자 끊임없이 노력하는,<br>
           <span class="highlight-year">{{ careersYear }}년차</span> 프론트엔드 개발자 강현민입니다.
         </p>
-        <a href="#contact" class="btn">Get in Touch</a>
+        <div class="hero-actions">
+          <a href="#contact" class="btn">Get in Touch</a>
+          <a href="resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+        </div>
       </div>
       <div class="hero-image">
         <img src="~/assets/img/hero-avatar.jpg" alt="Developer Avatar" class="avatar-shimmer" />

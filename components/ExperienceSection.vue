@@ -2,7 +2,7 @@
   <section id="experience" class="section">
     <div class="container">
       <h2 class="section-title">Experience</h2>
-      <div class="timeline">
+      <div class="timeline" v-reveal>
         <div class="timeline-item">
           <span class="date">2022.01.03 - 재직중</span>
           <div class="content">

@@ -12,6 +12,16 @@
           <li v-for="link in links" :key="link.hash">
             <a :href="link.hash" @click="closeMenu">{{ link.text }}</a>
           </li>
+          <li>
+            <button
+              class="theme-toggle-btn"
+              type="button"
+              :aria-label="theme === 'dark' ? '라이트 모드로 전환' : '다크 모드로 전환'"
+              @click="toggleTheme"
+            >
+              {{ theme === 'dark' ? '☀️' : '🌙' }}
+            </button>
+          </li>
         </ul>
       </div>
     </nav>
@@ -22,17 +32,20 @@
 
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2025 Kang Hyun-min. All rights reserved.</p>
+        <p>&copy; {{ currentYear }} Kang Hyun-min. All rights reserved.</p>
       </div>
     </footer>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 
 const isMenuOpen = ref(false)
 const isScrolled = ref(false)
+const currentYear = computed(() => new Date().getFullYear())
+
+const { theme, initTheme, toggleTheme } = useTheme()
 
 const links = [
   { text: 'About', hash: '#about' },
@@ -55,6 +68,7 @@ const handleScroll = () => {
 }
 
 onMounted(() => {
+  initTheme()
   window.addEventListener('scroll', handleScroll)
 })
 

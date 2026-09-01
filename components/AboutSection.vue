@@ -2,7 +2,7 @@
   <section id="about" class="section">
     <div class="container">
       <h2 class="section-title">About Me & Growth Process</h2>
-      <div class="about-content">
+      <div class="about-content" v-reveal>
         <p>
           <strong>"문제 해결을 위한 집요함과 꼼꼼함"</strong><br>
           어린 시절 컴퓨터 분해와 조립 경험을 통해 IT 분야에 관심을 가지게 되었고, 이때 체득한 집요함과 탐구심은 현재까지도 새로운 기술을 학습하는 원동력이 되고 있습니다. 

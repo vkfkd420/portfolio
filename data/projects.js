@@ -1,0 +1,142 @@
+// Canonical project data. Images are resolved separately via utils/projectImages.js
+// using imageFolder + imageOrder (the numeric suffix order screenshots should display in).
+//
+// `descriptions` is the short "핵심 성과" summary shown on both the home page card
+// and the top of the project detail page.
+// `tasks` is the fuller "주요 업무" breakdown shown only on the project detail page,
+// sourced from the resume's project-level portfolio section.
+export const projects = [
+  {
+    slug: 'kiumi',
+    title: '키우Me (AI 챗봇 자산관리)',
+    subtitle: '키움증권 협업 / LLM을 연동한 주식 관련 채팅 프로그램 개발',
+    tags: ['Vue.js (집중)', 'Spring'],
+    category: 'Mobile/Hybrid',
+    imageFolder: 'kiumi',
+    imageOrder: [3, 1, 2],
+    period: '2024.10 ~ 2025.12 (1년 3개월)',
+    role: '프론트엔드 시스템 구축 및 LLM 연동 채팅 UI 개발 (메인 개발자)',
+    descriptions: [
+      '<strong>환경별 이벤트 안정화:</strong> iOS/Android WebView 환경별 이벤트 처리 분기 로직을 적용하여 스크롤 및 입력 오류 안정화',
+      '<strong>컴포넌트 기반 유지보수:</strong> 채팅 UI를 기능 단위로 컴포넌트화하여 신규 시나리오 추가 및 유지보수 효율 개선',
+      '<strong>실시간 응답 UX:</strong> LLM API 응답을 프론트엔드에서 한 글자씩 순차적으로 출력해 실시간으로 답변이 생성되는 것과 같은 챗봇 사용자 경험 구현'
+    ],
+    tasks: [
+      'LLM 기반 투자 챗봇 UI 및 채팅 API 연동 개발',
+      '투자성향 진단 결과에 따른 사용자 등급 및 개인화 기능 구현',
+      '멀티턴 대화 및 이전 대화 조회를 위한 세션 관리 기능 개발',
+      'LLM 응답 Markdown 렌더링 및 답변 유형별 템플릿 UI 구현',
+      '사용자 등급에 따른 메인 큐레이션 및 개인화 콘텐츠 노출 기능 개발',
+      '세션 만료 및 운영·개발 환경에 따른 기능 노출 처리',
+      '주식 자산 데이터 시각화를 위한 차트 기능 구현',
+      'Android/iOS 환경별 대응 및 다양한 디바이스 모바일 화면 최적화 작업 주도'
+    ]
+  },
+  {
+    slug: 'masterclass',
+    title: '마스터클래스',
+    subtitle: '국책과제 관련 교육 플랫폼 프론트엔드 시스템 구축',
+    tags: ['Vue.js', 'Spring'],
+    category: 'Web Service',
+    imageFolder: 'masterclass',
+    imageOrder: [1, 2, 3],
+    period: '2025.03 ~ 2025.04 (2개월)',
+    role: '프론트엔드 시스템 구축 및 기능 개발',
+    descriptions: [
+      '<strong>학습 플로우 구현:</strong> 에피소드 퀴즈 결과로 이어지는 학습 진행 상태에 따라 화면과 결과 데이터가 변경되는 사용자 플로우 구현',
+      '<strong>PDF 리포트 생성:</strong> 사용자 학습 및 퀴즈 결과 데이터를 기반으로 PDF 형태의 결과 리포트를 생성하는 기능 구현'
+    ],
+    tasks: [
+      '교육 플랫폼의 전체 UI/UX 구현 및 반응형 웹 인터페이스 구축',
+      '관리자 페이지의 사용자 통계 및 정렬 기능 개발',
+      'PDF 리포트 생성 기능 구현',
+      '다양한 기기 환경에 대응하는 반응형 웹 인터페이스 구축'
+    ]
+  },
+  {
+    slug: 'investment-secret',
+    title: '투자의 비책',
+    subtitle: 'SBS Biz 연계 금융 서비스 / 주식 정보 제공 및 시황 관련 페이지 개발',
+    tags: ['Vue.js', 'Spring', 'Oracle'],
+    category: 'Web Service',
+    imageFolder: 'investment-secret',
+    imageOrder: [1, 2, 3],
+    period: '2023.02 ~ 2023.05',
+    role: 'SBS Biz 연계 서비스 메인페이지 및 종목 검색 기능 개발',
+    descriptions: [
+      '<strong>메인페이지 및 종목 검색 개발:</strong> SBS Biz 연계 서비스 메인페이지 및 종목 검색 기능 개발',
+      '<strong>검색 기록 관리 기능 구현:</strong> SessionStorage 기반 검색 기록 저장·삭제 및 종합평가 기능 구현'
+    ]
+  },
+  {
+    slug: 'noshow',
+    title: '노쇼노',
+    subtitle: '보증금 기반의 약속 관리 서비스 페이지 개발',
+    tags: ['Vue.js', 'Spring', 'Oracle'],
+    category: 'Web Service',
+    imageFolder: 'noshow',
+    imageOrder: [1, 2, 3, 4, 5],
+    period: '2023.04 ~ 2023.12 (9개월)',
+    role: '프론트엔드 시스템 및 서비스/관리자 페이지 구축',
+    descriptions: [
+      '<strong>중복 결제 요청 방지:</strong> 결제 완료 후 브라우저 뒤로가기로 결제 화면에 재진입하면서 중복 요청이 발생할 수 있는 문제를 라우팅·히스토리 제어를 통해 개선',
+      '<strong>Middleware 공통화:</strong> 페이지별로 반복되던 로그인 상태 확인 및 접근 제어 로직을 Nuxt Middleware로 공통화',
+      '<strong>인증 쿠키 이슈 해결:</strong> 관리자 API 요청에서 인증 쿠키가 전달되지 않는 문제를 Axios withCredentials와 쿠키 설정을 통해 해결'
+    ],
+    tasks: [
+      'Vue.js를 활용하여 약속 생성, 보증금 관리, 진행 현황 등 핵심 기능 화면 구현',
+      'Nuxt Middleware 기반 로그인 상태 확인 및 페이지 접근 제어 구현',
+      'Vuetify 기반의 관리자 대시보드로 고객정보, FAQ/1:1 문의, 입금·결제·매출·수수료 조회 및 엑셀 다운로드 등 관리자 기능 개발',
+      'REST API 연동을 통한 실시간 데이터 바인딩 및 사용자/관리자 권한별 UI 제어'
+    ]
+  },
+  {
+    slug: 'rassi-admin',
+    title: '라씨 매매비서 (관리자)',
+    subtitle: '주식 매매비서 서비스 운영을 위한 관리자 페이지',
+    tags: ['Spring', 'Oracle'],
+    category: 'Admin',
+    imageFolder: 'rassi-admin',
+    imageOrder: [2, 1],
+    period: '2024.02 ~ 2024.05 (4개월)',
+    role: '관리자 시스템 기능 개선 및 운영',
+    descriptions: [
+      '<strong>다중 조건 검색 개선:</strong> 회원 상태·서비스 이용정보 등 다중 조건을 조합해 필요한 회원 데이터를 조회할 수 있도록 관리자 검색 기능 개선',
+      '<strong>관리자 기능 통합:</strong> 회원 조회 → 상세정보 확인 → 서비스 설정으로 이어지는 관리자 기능을 개선해 운영에 필요한 회원 관리 기능 통합'
+    ],
+    tasks: [
+      '회원 리스트 조회 및 서비스 관리 기능 개선을 통한 운영 효율 증대',
+      '운영팀 업무 효율 향상을 위한 회원 리스트 조회, 상세 정보 관리, 서비스 설정 기능 개선'
+    ]
+  },
+  {
+    slug: 'company-intro',
+    title: '씽크풀 기업 소개 페이지',
+    subtitle: '회사 소개 웹 및 모바일 페이지 개발 및 유지보수',
+    tags: ['Vue.js', 'Spring'],
+    category: 'Web Service',
+    imageFolder: 'company-intro',
+    imageOrder: [5, 2, 3, 4, 1],
+    period: '2024.05 ~ 2024.09 (5개월)',
+    role: '기업 홈페이지(웹/모바일) 및 전용 관리자 시스템 전담 개발',
+    descriptions: [
+      '<strong>API~화면 연동 전담:</strong> 프론트엔드 화면 구현뿐만 아니라 서비스에 필요한 API 개발부터 화면 연동까지 직접 담당하여 웹·모바일 서비스 구축'
+    ],
+    tasks: [
+      '서비스에 필요한 데이터 조회 및 처리를 위한 API 직접 개발 및 프론트엔드 연동',
+      '웹·모바일 별도 프로젝트를 병행하며 신규 콘텐츠 추가 및 반복적인 QA·운영 수정 대응'
+    ]
+  },
+  {
+    slug: 'internal-admin',
+    title: '씽크풀 내부 관리자 시스템',
+    subtitle: '내부 시스템 운영을 위한 관리자 페이지',
+    tags: ['Spring', 'Oracle'],
+    category: 'Admin',
+    imageFolder: 'internal-admin',
+    imageOrder: [3, 1, 2],
+    descriptions: [
+      '<strong>시스템 안정성 기여:</strong> 내부 툴의 안정적인 운영을 위한 백엔드 로직 수정 및 오류 처리 담당'
+    ]
+  }
+]
