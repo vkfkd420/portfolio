@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vkfkd420.github.io/portfolio/sitemap.xml
