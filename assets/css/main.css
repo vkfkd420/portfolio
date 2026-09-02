@@ -8,7 +8,7 @@
   --border-color: #eaeaea;
   --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   --modal-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-  --section-spacing: 120px;
+  --section-spacing: 72px;
   --container-width: 800px;
   --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
@@ -76,6 +76,12 @@ body {
 .section {
   padding: var(--section-spacing) 0;
   border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 760px) {
+  .section {
+    padding: 56px 0;
+  }
 }
 
 .section-title {
