@@ -1,13 +1,13 @@
 import { shallowReactive, reactive, effectScope, getCurrentScope, hasInjectionContext, getCurrentInstance, inject, toRef, shallowRef, isReadonly, isRef, isShallow, isReactive, toRaw, defineAsyncComponent, defineComponent, computed, unref, h, Suspense, nextTick, mergeProps, provide, ref, Fragment, withCtx, createVNode, useSSRContext, onErrorCaptured, onServerPrefetch, resolveDynamicComponent, createApp } from "vue";
 import { $fetch } from "ofetch";
 import { baseURL } from "#internal/nuxt/paths";
-import { createHooks } from "C:/workspace/portfolio/node_modules/hookable/dist/index.mjs";
-import { getContext, executeAsync } from "C:/workspace/portfolio/node_modules/unctx/dist/index.mjs";
-import { sanitizeStatusCode, createError as createError$1, appendHeader } from "C:/workspace/portfolio/node_modules/h3/dist/index.mjs";
+import { createHooks } from "C:/workspace/개인용/portfolio/node_modules/hookable/dist/index.mjs";
+import { getContext, executeAsync } from "C:/workspace/개인용/portfolio/node_modules/unctx/dist/index.mjs";
+import { sanitizeStatusCode, createError as createError$1, appendHeader } from "C:/workspace/개인용/portfolio/node_modules/h3/dist/index.mjs";
 import { START_LOCATION, createMemoryHistory, createRouter as createRouter$1, useRoute as useRoute$1, RouterView } from "vue-router";
-import { toRouteMatcher, createRouter } from "C:/workspace/portfolio/node_modules/radix3/dist/index.mjs";
-import { defu } from "C:/workspace/portfolio/node_modules/defu/dist/defu.mjs";
-import { hasProtocol, joinURL, withQuery, isScriptProtocol } from "C:/workspace/portfolio/node_modules/ufo/dist/index.mjs";
+import { toRouteMatcher, createRouter } from "C:/workspace/개인용/portfolio/node_modules/radix3/dist/index.mjs";
+import { defu } from "C:/workspace/개인용/portfolio/node_modules/defu/dist/defu.mjs";
+import { hasProtocol, joinURL, withQuery, isScriptProtocol } from "C:/workspace/개인용/portfolio/node_modules/ufo/dist/index.mjs";
 import { ssrRenderComponent, ssrRenderSuspense, ssrRenderVNode } from "vue/server-renderer";
 if (!globalThis.$fetch) {
   globalThis.$fetch = $fetch.create({
@@ -379,7 +379,12 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import("./_nuxt/index-BMVuEzQ2.js")
+    component: () => import("./_nuxt/index-CEjzehtG.js")
+  },
+  {
+    name: "projects-slug",
+    path: "/projects/:slug()",
+    component: () => import("./_nuxt/_slug_-wWdp8h5g.js")
   }
 ];
 const _wrapInTransition = (props, children) => {
@@ -737,6 +742,23 @@ const revive_payload_server_MVtmlZaQpj6ApFmshWfUWl5PehCebzaBf2NuRMiIbms = /* @__
 const components_plugin_z4hgvsiddfKkfXTP6M8M4zG5Cb7sGnDhcryKVM45Di4 = /* @__PURE__ */ defineNuxtPlugin({
   name: "nuxt:global-components"
 });
+const reveal_gGJs6JjrALqFywdfBuFEEW69wASLkycQamgjJK9qajw = /* @__PURE__ */ defineNuxtPlugin((nuxtApp) => {
+  nuxtApp.vueApp.directive("reveal", {
+    mounted(el) {
+      el.classList.add("hidden");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry2) => {
+          if (entry2.isIntersecting) {
+            el.classList.remove("hidden");
+            el.classList.add("visible");
+            observer.unobserve(el);
+          }
+        });
+      }, { threshold: 0.15 });
+      observer.observe(el);
+    }
+  });
+});
 function toArray(value) {
   return Array.isArray(value) ? value : [value];
 }
@@ -797,10 +819,11 @@ const plugins = [
   plugin,
   revive_payload_server_MVtmlZaQpj6ApFmshWfUWl5PehCebzaBf2NuRMiIbms,
   components_plugin_z4hgvsiddfKkfXTP6M8M4zG5Cb7sGnDhcryKVM45Di4,
+  reveal_gGJs6JjrALqFywdfBuFEEW69wASLkycQamgjJK9qajw,
   prerender_server_sqIxOBipVr4FbVMA9kqWL0wT8FPop6sKAXLVfifsJzk
 ];
 const layouts = {
-  default: defineAsyncComponent(() => import("./_nuxt/default-C011D-k7.js").then((m) => m.default || m))
+  default: defineAsyncComponent(() => import("./_nuxt/default-DVy0InC4.js").then((m) => m.default || m))
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",
@@ -1065,8 +1088,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import("./_nuxt/error-404-Dad2WpTE.js"));
-    const _Error = defineAsyncComponent(() => import("./_nuxt/error-500-BUyyglZi.js"));
+    const _Error404 = defineAsyncComponent(() => import("./_nuxt/error-404-BQhfDfjx.js"));
+    const _Error = defineAsyncComponent(() => import("./_nuxt/error-500-CIXzZyD7.js"));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));
@@ -1150,12 +1173,14 @@ const entry_default = (ssrContext) => entry(ssrContext);
 export {
   _export_sfc as _,
   useNuxtApp as a,
-  useRuntimeConfig as b,
-  nuxtLinkDefaults as c,
+  useRouter as b,
+  createError as c,
+  useRuntimeConfig as d,
   entry_default as default,
+  nuxtLinkDefaults as e,
   navigateTo as n,
   resolveRouteObject as r,
   tryUseNuxtApp as t,
-  useRouter as u
+  useRoute as u
 };
 //# sourceMappingURL=server.mjs.map

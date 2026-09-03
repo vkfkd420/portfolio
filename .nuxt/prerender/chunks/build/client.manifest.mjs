@@ -1,21 +1,202 @@
 const client_manifest = {
-  "_DDzcDq6O.js": {
+  "_CnhkXbQ9.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DDzcDq6O.js",
+    "file": "CnhkXbQ9.js",
+    "name": "projectImages",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "assets": [
+      "company-intro-1.DFLv0qe2.png",
+      "company-intro-2.BDRaKJtc.png",
+      "company-intro-3.BRsMYObY.png",
+      "company-intro-4.86rpr96c.png",
+      "company-intro-5.D28UJRah.png",
+      "internal-admin-1.0lJQQSwh.png",
+      "internal-admin-2.gwBOSLrp.png",
+      "internal-admin-3.DvrLzxif.png",
+      "investment-secret-1.DNnn-EgJ.png",
+      "investment-secret-2.Cb7iZnYQ.png",
+      "investment-secret-3.CNUsjtoN.png",
+      "kiumi-1.Cfz32nsV.png",
+      "kiumi-2.DttBxa3f.png",
+      "kiumi-3.YtF4SlFZ.png",
+      "masterclass-1.CtK3n9T_.png",
+      "masterclass-2.BT27foGD.png",
+      "masterclass-3.3UbJyHJW.png",
+      "noshow-1.BXx61q4r.png",
+      "noshow-2.CpJovSKW.png",
+      "noshow-3.CYZ9_08u.png",
+      "noshow-4.CPSKrD9I.png",
+      "noshow-5.CTI1_q_K.png",
+      "rassi-admin-1.zHIdFbYe.png",
+      "rassi-admin-2.CF-HWsM8.png"
+    ]
+  },
+  "company-intro-1.DFLv0qe2.png": {
+    "file": "company-intro-1.DFLv0qe2.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "company-intro-2.BDRaKJtc.png": {
+    "file": "company-intro-2.BDRaKJtc.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "company-intro-3.BRsMYObY.png": {
+    "file": "company-intro-3.BRsMYObY.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "company-intro-4.86rpr96c.png": {
+    "file": "company-intro-4.86rpr96c.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "company-intro-5.D28UJRah.png": {
+    "file": "company-intro-5.D28UJRah.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "internal-admin-1.0lJQQSwh.png": {
+    "file": "internal-admin-1.0lJQQSwh.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "internal-admin-2.gwBOSLrp.png": {
+    "file": "internal-admin-2.gwBOSLrp.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "internal-admin-3.DvrLzxif.png": {
+    "file": "internal-admin-3.DvrLzxif.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "investment-secret-1.DNnn-EgJ.png": {
+    "file": "investment-secret-1.DNnn-EgJ.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "investment-secret-2.Cb7iZnYQ.png": {
+    "file": "investment-secret-2.Cb7iZnYQ.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "investment-secret-3.CNUsjtoN.png": {
+    "file": "investment-secret-3.CNUsjtoN.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "kiumi-1.Cfz32nsV.png": {
+    "file": "kiumi-1.Cfz32nsV.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "kiumi-2.DttBxa3f.png": {
+    "file": "kiumi-2.DttBxa3f.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "kiumi-3.YtF4SlFZ.png": {
+    "file": "kiumi-3.YtF4SlFZ.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "masterclass-1.CtK3n9T_.png": {
+    "file": "masterclass-1.CtK3n9T_.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "masterclass-2.BT27foGD.png": {
+    "file": "masterclass-2.BT27foGD.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "masterclass-3.3UbJyHJW.png": {
+    "file": "masterclass-3.3UbJyHJW.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "noshow-1.BXx61q4r.png": {
+    "file": "noshow-1.BXx61q4r.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "noshow-2.CpJovSKW.png": {
+    "file": "noshow-2.CpJovSKW.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "noshow-3.CYZ9_08u.png": {
+    "file": "noshow-3.CYZ9_08u.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "noshow-4.CPSKrD9I.png": {
+    "file": "noshow-4.CPSKrD9I.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "noshow-5.CTI1_q_K.png": {
+    "file": "noshow-5.CTI1_q_K.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "rassi-admin-1.zHIdFbYe.png": {
+    "file": "rassi-admin-1.zHIdFbYe.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "rassi-admin-2.CF-HWsM8.png": {
+    "file": "rassi-admin-2.CF-HWsM8.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "_Ei-AD2li.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "Ei-AD2li.js",
     "name": "v3",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
-  "_tNl9A4qD.js": {
+  "__Appg3rM.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "tNl9A4qD.js",
+    "file": "_Appg3rM.js",
     "name": "nuxt-link",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
@@ -201,12 +382,12 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "uYI9ttO-.js",
+    "file": "B3g_f-0Y.js",
     "name": "default",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_tNl9A4qD.js",
+      "__Appg3rM.js",
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
@@ -215,19 +396,19 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CmQ79vQ7.js",
+    "file": "BJHSunZL.js",
     "name": "error-404",
     "src": "node_modules/nuxt/dist/app/components/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_tNl9A4qD.js",
+      "__Appg3rM.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_DDzcDq6O.js"
+      "_Ei-AD2li.js"
     ],
     "css": []
   },
-  "error-404.MksMKVWr.css": {
-    "file": "error-404.MksMKVWr.css",
+  "error-404.CxWEUmG1.css": {
+    "file": "error-404.CxWEUmG1.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -237,18 +418,18 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BoqqKfRH.js",
+    "file": "BGqKTvpI.js",
     "name": "error-500",
     "src": "node_modules/nuxt/dist/app/components/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_DDzcDq6O.js"
+      "_Ei-AD2li.js"
     ],
     "css": []
   },
-  "error-500.DOWD7OuR.css": {
-    "file": "error-500.DOWD7OuR.css",
+  "error-500.Bafn00r4.css": {
+    "file": "error-500.Bafn00r4.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -258,7 +439,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "JqvyMD4_.js",
+    "file": "B4tZjM40.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -274,46 +455,24 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "6auRcDtL.js",
+    "file": "AWIW-DkE.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
-      "node_modules/nuxt/dist/app/entry.js"
+      "node_modules/nuxt/dist/app/entry.js",
+      "__Appg3rM.js",
+      "_CnhkXbQ9.js"
     ],
     "css": [
-      "index.DT7wdEq_.css"
+      "index.Ch4v5Imn.css"
     ],
     "assets": [
-      "hero-avatar.CPLXj3ac.jpg",
-      "kiumi-1.Cfz32nsV.png",
-      "kiumi-2.DttBxa3f.png",
-      "kiumi-3.YtF4SlFZ.png",
-      "masterclass-1.CtK3n9T_.png",
-      "masterclass-2.BT27foGD.png",
-      "masterclass-3.3UbJyHJW.png",
-      "investment-secret-1.DNnn-EgJ.png",
-      "investment-secret-2.Cb7iZnYQ.png",
-      "investment-secret-3.CNUsjtoN.png",
-      "noshow-1.BXx61q4r.png",
-      "noshow-2.CpJovSKW.png",
-      "noshow-3.CYZ9_08u.png",
-      "noshow-4.CPSKrD9I.png",
-      "noshow-5.CTI1_q_K.png",
-      "rassi-admin-1.zHIdFbYe.png",
-      "rassi-admin-2.CF-HWsM8.png",
-      "company-intro-1.DFLv0qe2.png",
-      "company-intro-2.BDRaKJtc.png",
-      "company-intro-3.BRsMYObY.png",
-      "company-intro-4.86rpr96c.png",
-      "company-intro-5.D28UJRah.png",
-      "internal-admin-1.0lJQQSwh.png",
-      "internal-admin-2.gwBOSLrp.png",
-      "internal-admin-3.DvrLzxif.png"
+      "hero-avatar.CPLXj3ac.jpg"
     ]
   },
-  "index.DT7wdEq_.css": {
-    "file": "index.DT7wdEq_.css",
+  "index.Ch4v5Imn.css": {
+    "file": "index.Ch4v5Imn.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -324,149 +483,28 @@ const client_manifest = {
     "prefetch": true,
     "mimeType": "image/jpeg"
   },
-  "kiumi-1.Cfz32nsV.png": {
-    "file": "kiumi-1.Cfz32nsV.png",
-    "resourceType": "image",
+  "pages/projects/[slug].vue": {
+    "resourceType": "script",
+    "module": true,
     "prefetch": true,
-    "mimeType": "image/png"
+    "preload": true,
+    "file": "F_0_zcb3.js",
+    "name": "_slug_",
+    "src": "pages/projects/[slug].vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "__Appg3rM.js",
+      "_CnhkXbQ9.js",
+      "node_modules/nuxt/dist/app/entry.js",
+      "_Ei-AD2li.js"
+    ],
+    "css": []
   },
-  "kiumi-2.DttBxa3f.png": {
-    "file": "kiumi-2.DttBxa3f.png",
-    "resourceType": "image",
+  "_slug_.BLj9t7TC.css": {
+    "file": "_slug_.BLj9t7TC.css",
+    "resourceType": "style",
     "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "kiumi-3.YtF4SlFZ.png": {
-    "file": "kiumi-3.YtF4SlFZ.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "masterclass-1.CtK3n9T_.png": {
-    "file": "masterclass-1.CtK3n9T_.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "masterclass-2.BT27foGD.png": {
-    "file": "masterclass-2.BT27foGD.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "masterclass-3.3UbJyHJW.png": {
-    "file": "masterclass-3.3UbJyHJW.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "investment-secret-1.DNnn-EgJ.png": {
-    "file": "investment-secret-1.DNnn-EgJ.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "investment-secret-2.Cb7iZnYQ.png": {
-    "file": "investment-secret-2.Cb7iZnYQ.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "investment-secret-3.CNUsjtoN.png": {
-    "file": "investment-secret-3.CNUsjtoN.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "noshow-1.BXx61q4r.png": {
-    "file": "noshow-1.BXx61q4r.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "noshow-2.CpJovSKW.png": {
-    "file": "noshow-2.CpJovSKW.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "noshow-3.CYZ9_08u.png": {
-    "file": "noshow-3.CYZ9_08u.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "noshow-4.CPSKrD9I.png": {
-    "file": "noshow-4.CPSKrD9I.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "noshow-5.CTI1_q_K.png": {
-    "file": "noshow-5.CTI1_q_K.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "rassi-admin-1.zHIdFbYe.png": {
-    "file": "rassi-admin-1.zHIdFbYe.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "rassi-admin-2.CF-HWsM8.png": {
-    "file": "rassi-admin-2.CF-HWsM8.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "company-intro-1.DFLv0qe2.png": {
-    "file": "company-intro-1.DFLv0qe2.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "company-intro-2.BDRaKJtc.png": {
-    "file": "company-intro-2.BDRaKJtc.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "company-intro-3.BRsMYObY.png": {
-    "file": "company-intro-3.BRsMYObY.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "company-intro-4.86rpr96c.png": {
-    "file": "company-intro-4.86rpr96c.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "company-intro-5.D28UJRah.png": {
-    "file": "company-intro-5.D28UJRah.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "internal-admin-1.0lJQQSwh.png": {
-    "file": "internal-admin-1.0lJQQSwh.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "internal-admin-2.gwBOSLrp.png": {
-    "file": "internal-admin-2.gwBOSLrp.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "internal-admin-3.DvrLzxif.png": {
-    "file": "internal-admin-3.DvrLzxif.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
+    "preload": true
   }
 };
 

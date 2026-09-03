@@ -1,32 +1,32 @@
-import { hasInjectionContext, getCurrentInstance, defineAsyncComponent, defineComponent, h, inject, computed, unref, shallowRef, provide, shallowReactive, ref, Suspense, Fragment, createApp, toRef, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, reactive, effectScope, isReadonly, isRef, isShallow, isReactive, toRaw, mergeProps, getCurrentScope, withCtx, nextTick, useSSRContext } from 'file://C:/workspace/portfolio/node_modules/vue/index.mjs';
-import { $fetch } from 'file://C:/workspace/portfolio/node_modules/ofetch/dist/node.mjs';
+import { hasInjectionContext, getCurrentInstance, inject, defineAsyncComponent, defineComponent, h, computed, unref, shallowRef, provide, shallowReactive, ref, Suspense, Fragment, createApp, toRef, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, reactive, effectScope, isReadonly, isRef, isShallow, isReactive, toRaw, mergeProps, getCurrentScope, withCtx, nextTick, useSSRContext } from 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/vue/index.mjs';
+import { $fetch } from 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/ofetch/dist/node.mjs';
 import { b as baseURL } from '../_/renderer.mjs';
-import { createHooks } from 'file://C:/workspace/portfolio/node_modules/hookable/dist/index.mjs';
-import { getContext, executeAsync } from 'file://C:/workspace/portfolio/node_modules/unctx/dist/index.mjs';
-import { sanitizeStatusCode, createError as createError$1, appendHeader } from 'file://C:/workspace/portfolio/node_modules/h3/dist/index.mjs';
-import { useRoute as useRoute$1, RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'file://C:/workspace/portfolio/node_modules/vue-router/vue-router.node.mjs';
-import { toRouteMatcher, createRouter as createRouter$1 } from 'file://C:/workspace/portfolio/node_modules/radix3/dist/index.mjs';
-import { defu } from 'file://C:/workspace/portfolio/node_modules/defu/dist/defu.mjs';
-import { hasProtocol, isScriptProtocol, joinURL, withQuery } from 'file://C:/workspace/portfolio/node_modules/ufo/dist/index.mjs';
-import { ssrRenderSuspense, ssrRenderComponent, ssrRenderVNode } from 'file://C:/workspace/portfolio/node_modules/vue/server-renderer/index.mjs';
-import 'file://C:/workspace/portfolio/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { createHooks } from 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/hookable/dist/index.mjs';
+import { getContext, executeAsync } from 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/unctx/dist/index.mjs';
+import { createError as createError$1, sanitizeStatusCode, appendHeader } from 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/h3/dist/index.mjs';
+import { useRoute as useRoute$1, RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/vue-router/vue-router.node.mjs';
+import { toRouteMatcher, createRouter as createRouter$1 } from 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/radix3/dist/index.mjs';
+import { defu } from 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/defu/dist/defu.mjs';
+import { hasProtocol, isScriptProtocol, joinURL, withQuery } from 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/ufo/dist/index.mjs';
+import { ssrRenderSuspense, ssrRenderComponent, ssrRenderVNode } from 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/vue/server-renderer/index.mjs';
+import 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/vue-bundle-renderer/dist/runtime.mjs';
 import '../_/nitro.mjs';
-import 'file://C:/workspace/portfolio/node_modules/destr/dist/index.mjs';
-import 'file://C:/workspace/portfolio/node_modules/node-mock-http/dist/index.mjs';
-import 'file://C:/workspace/portfolio/node_modules/unstorage/dist/index.mjs';
-import 'file://C:/workspace/portfolio/node_modules/unstorage/drivers/fs.mjs';
-import 'file:///C:/workspace/portfolio/node_modules/nuxt/dist/core/runtime/nitro/utils/cache-driver.js';
-import 'file://C:/workspace/portfolio/node_modules/unstorage/drivers/fs-lite.mjs';
-import 'file://C:/workspace/portfolio/node_modules/ohash/dist/index.mjs';
-import 'file://C:/workspace/portfolio/node_modules/klona/dist/index.mjs';
-import 'file://C:/workspace/portfolio/node_modules/scule/dist/index.mjs';
+import 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/destr/dist/index.mjs';
+import 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/node-mock-http/dist/index.mjs';
+import 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/unstorage/dist/index.mjs';
+import 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/unstorage/drivers/fs.mjs';
+import 'file:///C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/nuxt/dist/core/runtime/nitro/utils/cache-driver.js';
+import 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/unstorage/drivers/fs-lite.mjs';
+import 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/ohash/dist/index.mjs';
+import 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/klona/dist/index.mjs';
+import 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/scule/dist/index.mjs';
 import 'node:fs';
 import 'node:url';
-import 'file://C:/workspace/portfolio/node_modules/pathe/dist/index.mjs';
-import 'file://C:/workspace/portfolio/node_modules/unhead/dist/server.mjs';
-import 'file://C:/workspace/portfolio/node_modules/devalue/index.js';
-import 'file://C:/workspace/portfolio/node_modules/unhead/dist/utils.mjs';
-import 'file://C:/workspace/portfolio/node_modules/unhead/dist/plugins.mjs';
+import 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/pathe/dist/index.mjs';
+import 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/unhead/dist/server.mjs';
+import 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/devalue/index.js';
+import 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/unhead/dist/plugins.mjs';
+import 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/unhead/dist/utils.mjs';
 
 if (!globalThis.$fetch) {
   globalThis.$fetch = $fetch.create({
@@ -398,7 +398,12 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-BMVuEzQ2.mjs')
+    component: () => import('./index-CEjzehtG.mjs')
+  },
+  {
+    name: "projects-slug",
+    path: "/projects/:slug()",
+    component: () => import('./_slug_-wWdp8h5g.mjs')
   }
 ];
 const _wrapInTransition = (props, children) => {
@@ -755,6 +760,23 @@ const revive_payload_server_MVtmlZaQpj6ApFmshWfUWl5PehCebzaBf2NuRMiIbms = /* @__
 const components_plugin_z4hgvsiddfKkfXTP6M8M4zG5Cb7sGnDhcryKVM45Di4 = /* @__PURE__ */ defineNuxtPlugin({
   name: "nuxt:global-components"
 });
+const reveal_gGJs6JjrALqFywdfBuFEEW69wASLkycQamgjJK9qajw = /* @__PURE__ */ defineNuxtPlugin((nuxtApp) => {
+  nuxtApp.vueApp.directive("reveal", {
+    mounted(el) {
+      el.classList.add("hidden");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry2) => {
+          if (entry2.isIntersecting) {
+            el.classList.remove("hidden");
+            el.classList.add("visible");
+            observer.unobserve(el);
+          }
+        });
+      }, { threshold: 0.15 });
+      observer.observe(el);
+    }
+  });
+});
 function toArray(value) {
   return Array.isArray(value) ? value : [value];
 }
@@ -809,10 +831,11 @@ const plugins = [
   plugin,
   revive_payload_server_MVtmlZaQpj6ApFmshWfUWl5PehCebzaBf2NuRMiIbms,
   components_plugin_z4hgvsiddfKkfXTP6M8M4zG5Cb7sGnDhcryKVM45Di4,
+  reveal_gGJs6JjrALqFywdfBuFEEW69wASLkycQamgjJK9qajw,
   prerender_server_sqIxOBipVr4FbVMA9kqWL0wT8FPop6sKAXLVfifsJzk
 ];
 const layouts = {
-  default: defineAsyncComponent(() => import('./default-C011D-k7.mjs').then((m) => m.default || m))
+  default: defineAsyncComponent(() => import('./default-DVy0InC4.mjs').then((m) => m.default || m))
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",
@@ -1077,8 +1100,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./error-404-Dad2WpTE.mjs'));
-    const _Error = defineAsyncComponent(() => import('./error-500-BUyyglZi.mjs'));
+    const _Error404 = defineAsyncComponent(() => import('./error-404-BQhfDfjx.mjs'));
+    const _Error = defineAsyncComponent(() => import('./error-500-CIXzZyD7.mjs'));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));
@@ -1160,5 +1183,5 @@ let entry;
 }
 const entry_default = (ssrContext) => entry(ssrContext);
 
-export { _export_sfc as _, useNuxtApp as a, useRuntimeConfig as b, nuxtLinkDefaults as c, entry_default as default, navigateTo as n, resolveRouteObject as r, tryUseNuxtApp as t, useRouter as u };
+export { _export_sfc as _, useNuxtApp as a, useRouter as b, createError as c, useRuntimeConfig as d, entry_default as default, nuxtLinkDefaults as e, navigateTo as n, resolveRouteObject as r, tryUseNuxtApp as t, useRoute as u };
 //# sourceMappingURL=server.mjs.map

@@ -1,13 +1,13 @@
-import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://C:/workspace/portfolio/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { getResponseStatusText, getResponseStatus, getQuery, createError, appendResponseHeader } from 'file://C:/workspace/portfolio/node_modules/h3/dist/index.mjs';
-import { joinRelativeURL, joinURL, withoutTrailingSlash } from 'file://C:/workspace/portfolio/node_modules/ufo/dist/index.mjs';
-import { renderToString } from 'file://C:/workspace/portfolio/node_modules/vue/server-renderer/index.mjs';
+import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { getResponseStatusText, getResponseStatus, getQuery, createError, appendResponseHeader } from 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/h3/dist/index.mjs';
+import { joinRelativeURL, joinURL, withoutTrailingSlash } from 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/ufo/dist/index.mjs';
+import { renderToString } from 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/vue/server-renderer/index.mjs';
 import { a as useRuntimeConfig, b as useStorage, d as defineRenderHandler, g as getRouteRules, u as useNitroApp } from './nitro.mjs';
-import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://C:/workspace/portfolio/node_modules/unhead/dist/server.mjs';
-import { stringify, uneval } from 'file://C:/workspace/portfolio/node_modules/devalue/index.js';
-import { walkResolver } from 'file://C:/workspace/portfolio/node_modules/unhead/dist/utils.mjs';
-import { toValue, isRef, hasInjectionContext, inject, ref, watchEffect, getCurrentInstance, onBeforeUnmount, onDeactivated, onActivated } from 'file://C:/workspace/portfolio/node_modules/vue/index.mjs';
-import { DeprecationsPlugin, PromisesPlugin, TemplateParamsPlugin, AliasSortingPlugin } from 'file://C:/workspace/portfolio/node_modules/unhead/dist/plugins.mjs';
+import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/unhead/dist/server.mjs';
+import { stringify, uneval } from 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/devalue/index.js';
+import { FlatMetaPlugin, DeprecationsPlugin, PromisesPlugin, TemplateParamsPlugin, AliasSortingPlugin } from 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/unhead/dist/plugins.mjs';
+import { walkResolver } from 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/unhead/dist/utils.mjs';
+import { toValue, isRef, hasInjectionContext, inject, ref, watchEffect, getCurrentInstance, onBeforeUnmount, onDeactivated, onActivated } from 'file://C:/workspace/%EA%B0%9C%EC%9D%B8%EC%9A%A9/portfolio/node_modules/vue/index.mjs';
 
 const VueResolver = (_, value) => {
   return isRef(value) ? toValue(value) : value;
@@ -66,6 +66,16 @@ function clientUseHead(head, input, options = {}) {
   }
   return entry;
 }
+function useSeoMeta(input = {}, options = {}) {
+  const head = options.head || /* @__PURE__ */ injectHead();
+  head.use(FlatMetaPlugin);
+  const { title, titleTemplate, ...meta } = input;
+  return useHead({
+    title,
+    titleTemplate,
+    _flatMeta: meta
+  }, options);
+}
 
 // @__NO_SIDE_EFFECTS__
 function createHead(options = {}) {
@@ -77,7 +87,7 @@ function createHead(options = {}) {
   return head;
 }
 
-const appHead = {"meta":[{"charset":"utf-8"},{"name":"description","content":"4년차 프론트엔드 개발자 강현민의 포트폴리오입니다."},{"name":"viewport","content":"width=device-width, initial-scale=1"}],"link":[{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"}],"style":[],"script":[],"noscript":[],"title":"Frontend Developer Portfolio - Kang Hyun-min"};
+const appHead = {"meta":[{"charset":"utf-8"},{"name":"description","content":"5년차 프론트엔드 개발자 강현민의 포트폴리오입니다. Vue.js, Nuxt.js, Spring 기반 웹/앱 서비스 개발 경험을 소개합니다."},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"keywords","content":"강현민, 프론트엔드 개발자, Frontend Developer, Vue.js, Nuxt.js, 포트폴리오, Portfolio"},{"name":"author","content":"Kang Hyun-min"},{"name":"robots","content":"index, follow"},{"name":"theme-color","content":"#3b82f6"},{"property":"og:type","content":"website"},{"property":"og:site_name","content":"Frontend Developer Portfolio - Kang Hyun-min"},{"property":"og:title","content":"Frontend Developer Portfolio - Kang Hyun-min"},{"property":"og:description","content":"5년차 프론트엔드 개발자 강현민의 포트폴리오입니다. Vue.js, Nuxt.js, Spring 기반 웹/앱 서비스 개발 경험을 소개합니다."},{"property":"og:url","content":"https://vkfkd420.github.io/portfolio/"},{"property":"og:image","content":"https://vkfkd420.github.io/portfolio/og-image.png"},{"property":"og:locale","content":"ko_KR"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:title","content":"Frontend Developer Portfolio - Kang Hyun-min"},{"name":"twitter:description","content":"5년차 프론트엔드 개발자 강현민의 포트폴리오입니다. Vue.js, Nuxt.js, Spring 기반 웹/앱 서비스 개발 경험을 소개합니다."},{"name":"twitter:image","content":"https://vkfkd420.github.io/portfolio/og-image.png"}],"link":[{"rel":"canonical","href":"https://vkfkd420.github.io/portfolio/"},{"rel":"icon","type":"image/svg+xml","href":"favicon.svg"},{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"}],"style":[],"script":[{"innerHTML":"(function(){try{var t=localStorage.getItem('theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();","type":"text/javascript","tagPosition":"head"}],"noscript":[],"title":"Frontend Developer Portfolio - Kang Hyun-min","htmlAttrs":{"lang":"ko"}};
 
 const appRootTag = "div";
 
@@ -445,5 +455,5 @@ const renderer$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty
   default: renderer
 }, Symbol.toStringTag, { value: 'Module' }));
 
-export { buildAssetsURL as a, baseURL as b, headSymbol as h, renderer$1 as r, useHead as u };
+export { buildAssetsURL as a, baseURL as b, useHead as c, headSymbol as h, renderer$1 as r, useSeoMeta as u };
 //# sourceMappingURL=renderer.mjs.map
